@@ -1,0 +1,25 @@
+@baseUrl = http://localhost:3000
+
+
+### AppControllerGetHello
+
+# @name AppController_GetHello
+GET {{baseUrl}}/inicio/ola/
+
+
+### AppControllerTeste
+
+# @name AppController_Teste
+GET {{baseUrl}}/inicio/teste
+
+
+### AppControllerConceitosManual
+
+# @name AppController_Conceitos_Manual
+GET {{baseUrl}}/conceitos-manual
+
+
+### AppControllerConceitosAutomatico
+
+# @name AppController_Conceitos_Automatico
+GET {{baseUrl}}/conceitos-automatico
