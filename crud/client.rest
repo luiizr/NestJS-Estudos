@@ -1,0 +1,34 @@
+@baseUrl = http://localhost:3000
+
+
+### AppControllerGetHello
+GET {{baseUrl}}/recados/
+?limit=10
+&offset=10
+
+### AppControllerGetHello
+POST {{baseUrl}}/recados/
+Content-Type: application/json
+
+{
+  "texto": "Testando um Texto para salvar no PostgreSQL",
+  "de": "Luiz",
+  "para": "Maria",
+  "lido": false,
+  "data": "2025-08-27T17:43:59.652Z"
+}
+
+### AppControllerTeste
+PATCH  {{baseUrl}}/recados/11
+Content-Type: application/json
+
+{
+  "texto": "Novo recado EDITADO >:)",
+  "de": "João",
+  "para": "BDPGAdmin4",
+  "lido": true
+}
+
+### AppControllerTeste
+DELETE  {{baseUrl}}/recados/8
+Content-Type: application/json
